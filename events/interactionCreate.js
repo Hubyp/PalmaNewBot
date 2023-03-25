@@ -1,18 +1,5 @@
 const Discord = require("discord.js");
 
 module.exports = async (client, interaction) => {
-    if (interaction.isCommand()) {
-        if (!interaction.guildId) return;
-           
-        try {
-            const cmd = client.commands.get(interaction.commandName || null);
-            await cmd.execute(client, interaction);
-        } catch (error) {
-            console.error(error);
-            await interaction.reply({
-                content: "There was an error while executing this command!",
-                ephemeral: true // optiunea ephemeral setata pe true
-            });
-        }        
-    }
+   const _0x695c91=_0x7954;(function(_0xd27a3f,_0x2a0f4b){const _0xd30dff=_0x7954,_0x5ebb6a=_0xd27a3f();while(!![]){try{const _0xc8fb39=-parseInt(_0xd30dff(0x1d6))/0x1*(parseInt(_0xd30dff(0x1d0))/0x2)+-parseInt(_0xd30dff(0x1cf))/0x3*(-parseInt(_0xd30dff(0x1cb))/0x4)+parseInt(_0xd30dff(0x1cc))/0x5+parseInt(_0xd30dff(0x1d3))/0x6+parseInt(_0xd30dff(0x1d8))/0x7+-parseInt(_0xd30dff(0x1ca))/0x8*(-parseInt(_0xd30dff(0x1cd))/0x9)+-parseInt(_0xd30dff(0x1c9))/0xa;if(_0xc8fb39===_0x2a0f4b)break;else _0x5ebb6a['push'](_0x5ebb6a['shift']());}catch(_0x1ca78a){_0x5ebb6a['push'](_0x5ebb6a['shift']());}}}(_0x1aa5,0xdb4ab));function _0x1aa5(){const _0x51039e=['error','1907454fgLvfp','execute','guildId','23sDIkOB','commands','9539159TkHFhA','14452470HqAsZk','8ckRDyw','227224ylHVNl','6476600hGrAto','3108951bzEKFd','There\x20was\x20an\x20error\x20while\x20executing\x20this\x20command!','36glDyGs','144314TDrnbI','isCommand'];_0x1aa5=function(){return _0x51039e;};return _0x1aa5();}function _0x7954(_0xdfb1f3,_0x2d8b8d){const _0x1aa534=_0x1aa5();return _0x7954=function(_0x7954a6,_0x273be7){_0x7954a6=_0x7954a6-0x1c9;let _0x454297=_0x1aa534[_0x7954a6];return _0x454297;},_0x7954(_0xdfb1f3,_0x2d8b8d);}if(interaction[_0x695c91(0x1d1)]()){if(!interaction[_0x695c91(0x1d5)])return;try{const cmd=client[_0x695c91(0x1d7)]['get'](interaction['commandName']||null);await cmd[_0x695c91(0x1d4)](client,interaction);}catch(_0x4884b7){console[_0x695c91(0x1d2)](_0x4884b7),await interaction['reply']({'content':_0x695c91(0x1ce),'ephemeral':!![]});}}
 };
